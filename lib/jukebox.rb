@@ -7,13 +7,11 @@ def help
 end 
 
 def play(song_array)
-  check = false
   song_name = nil
   puts "Please enter a song name or number:"
   user_input = gets.strip
   song_array.each_with_index do |song, index|
     if user_input == song || (user_input.to_i - 1) == index
-      check = true 
       song_name == song
     end 
   end 
