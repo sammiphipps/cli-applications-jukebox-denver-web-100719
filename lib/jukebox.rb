@@ -6,7 +6,22 @@ def help
   puts "- exit : exits this program"
 end 
 
-def play
+def play(song_array)
+  check = false
+  song_name = nil
+  puts "Please enter a song name or number:"
+  user_input = gets.strip
+  song_array.each_with_index do |song, index|
+    if user_input == song || (user_input.to_i - 1) == index
+      check = true 
+      song_name == song
+    end 
+  end 
+  if check == true 
+    return puts "Playing #{song_name}"
+  else 
+    return puts "Invalid input, please try again"
+  end 
 end 
 
 def list(song_array)
