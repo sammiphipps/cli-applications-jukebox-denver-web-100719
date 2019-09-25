@@ -33,6 +33,7 @@ def exit_jukebox
 end 
 
 def run(song_array)
+  user_input = nil
   until user_input == "exit"
     puts "Please enter a command:"
     user_input = gets.strip
