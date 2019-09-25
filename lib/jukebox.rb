@@ -10,10 +10,13 @@ def play
 end 
 
 def list(song_array)
-  song_array.each_with_index do |song|
+  song_array.each_with_index do |song, index|
+    puts "#{index}. #{song}"
+  end 
 end 
 
 def exit_jukebox
+  puts "Goodbye"
 end 
 
 def run(song_array)
