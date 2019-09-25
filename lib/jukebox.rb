@@ -34,4 +34,5 @@ end
 
 def run(song_array)
   puts "Please enter a command:"
+  user_input
 end 
