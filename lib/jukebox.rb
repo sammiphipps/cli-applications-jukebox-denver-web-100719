@@ -34,5 +34,9 @@ end
 
 def run(song_array)
   puts "Please enter a command:"
-  user_input
+  user_input = gets.strip
+  if user_input == "help"
+    help
+  elsif user_input == "play"
+  elsif user_input == ""
 end 
