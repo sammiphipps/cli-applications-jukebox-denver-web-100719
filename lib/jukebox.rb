@@ -1,4 +1,10 @@
 def help
 end 
 
-def 
+def play
+end 
+
+def list
+end 
+
+def exit_jukebox
