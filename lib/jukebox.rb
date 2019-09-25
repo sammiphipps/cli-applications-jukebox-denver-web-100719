@@ -10,7 +10,7 @@ def play
 end 
 
 def list(song_array)
-  song_array.
+  song_array.each_with_index do |song|
 end 
 
 def exit_jukebox
