@@ -11,11 +11,11 @@ def play(song_array)
   puts "Please enter a song name or number:"
   user_input = gets.strip
   song_array.each_with_index do |song, index|
-    if user_input == song || (user_input.to_i - 1) == index
-      song_name == song
+    if user_input.to_s == song || (user_input.to_i - 1) == index
+      song_name = song
     end 
   end 
-  if check == true 
+  if song_name != nil 
     return puts "Playing #{song_name}"
   else 
     return puts "Invalid input, please try again"
